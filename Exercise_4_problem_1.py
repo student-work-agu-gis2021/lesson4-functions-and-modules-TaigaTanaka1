@@ -58,9 +58,9 @@ print(fahr_to_celsius(71))
 # Write your answers below:
 
 # YOUR ANSWER HERE. Write your answers as comments
-#
-#
-#
+#  1. I understand well. 
+#  2. Once we create functions that are used frequently, we don't have to long program.
+#  What's more, our code will be easier to understand.
 #
 
 # #### Done!
