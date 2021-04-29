@@ -92,7 +92,22 @@ zeros = 0
 ones = 0
 twos = 0
 threes = 0
-
+# count the number of each class in temp_classes
+for temp_class in temp_classes:
+  if temp_class == 0:
+    zeros += 1
+  elif temp_class == 1:
+    ones += 1
+  elif temp_class == 2:
+    twos += 1
+  elif temp_class == 3:
+    threes += 1
+"""  by sing count() method
+zeros = temp_classes.count(0)
+ones = temp_classes.count(1)
+twos = temp_classes.count(2)
+threes = temp_classes.count(3) + 1
+"""
 
 # **TIP**: You might want to consider using a [**count()** function](https://www.tutorialspoint.com/python3/list_count.htm) OR a for loop for this.
 
