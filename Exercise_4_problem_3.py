@@ -53,7 +53,7 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 # 
 # 2. Import the `fahr_to_celsius` and `temp_classifier` functions from your `temp_functions.py` 
 # 3. Create an empty list called `temp_classes` (which will be filled with temperature class numbers later)
-# 4. **Convert the Fahrenheit temperatures** in the `temp_data` list into Celsius and **classify the Celsius temperatures** using the importend functions. The output should be stored in the `temp_classes` list
+# 4. **Convert the Fahrenheit temperatures** in the `temp_data` list into Celsius and **classify the Celsius temperatures** using the imported functions. The output should be stored in the `temp_classes` list
 #  
 #    **You can do the temperature conversion and classification inside one for loop:**
 # 
@@ -66,6 +66,18 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 
 # YOUR CODE HERE
 from temp_functions import fahr_to_celsius, temp_classifier
+# Empty list
+temp_classes = []
+# For all data in "temp_classes", convert to Celsius and classifier.
+for temperature in temp_data:
+  temp_celsius = fahr_to_celsius(temperature)
+  temp_class = temp_classifier(temp_celsius)
+  temp_classes.append(temp_class)
+
+
+
+
+
 # #### Part 2 (continues)
 # 
 # 6. Calculate how many temperatures there are in each temperature class:
@@ -75,6 +87,12 @@ from temp_functions import fahr_to_celsius, temp_classifier
 #   
 
 # YOUR CODE HERE
+# Create four variables to count up
+zeros = 0
+ones = 0
+twos = 0
+threes = 0
+
 
 # **TIP**: You might want to consider using a [**count()** function](https://www.tutorialspoint.com/python3/list_count.htm) OR a for loop for this.
 
